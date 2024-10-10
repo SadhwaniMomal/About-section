@@ -1,0 +1,134 @@
+/* Custom background with a gradient for the container */
+.custom-background {
+    background: linear-gradient(135deg, #2d3a95, #1a2b7f); /* Blue gradient */
+    color: white; /* White text color */
+    position: relative; /* Relative positioning to control child elements */
+    overflow: hidden; /* Hide any overflow from the floating elements */
+    height: 300px; /* Adjusts the height of the background container */
+    display: flex; /* Flexbox layout for centering content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center align text */
+}
+
+/* Styling and animation for floating shapes */
+.floating-shape {
+    position: absolute; /* Absolute positioning for independent movement */
+    z-index: 1; /* Controls stacking order */
+    animation: float 6s infinite ease-in-out; /* Floating animation */
+}
+
+/* Common styles for all floating shapes */
+.floating-shape-1,
+.floating-shape-2,
+.floating-shape-3 {
+    background: rgba(255, 255, 255, 0.1); /* Transparent white background */
+    border-radius: 50%; /* Circular shapes */
+}
+
+/* Individual shape styling with size, position, and animation */
+.floating-shape-1 {
+    width: 150px;
+    height: 150px;
+    top: 40px; /* Adjusted for better centering */
+    left: 50px; /* Increased for balanced placement */
+    animation-duration: 6s; /* Animation duration */
+}
+
+.floating-shape-2 {
+    width: 100px;
+    height: 100px;
+    bottom: 60px; /* Adjusted for spacing */
+    right: 60px; /* Aligned further to the edge */
+    animation-duration: 8s; /* Longer animation duration */
+    animation-delay: 2s; /* Delay before animation starts */
+}
+
+.floating-shape-3 {
+    width: 120px;
+    height: 120px;
+    top: 80px; /* Increased top spacing */
+    right: 100px; /* Adjusted for visual symmetry */
+    animation-duration: 10s; /* Even longer animation duration */
+    animation-delay: 4s; /* Longer delay before animation starts */
+}
+
+/* Styling for small floating dots */
+.floating-dot {
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.3); /* Slightly more visible background */
+    border-radius: 50%; /* Circular dots */
+    animation: float 5s infinite ease-in-out; /* Continuous floating animation */
+}
+
+/* Positioning and animation details for individual dots */
+.floating-dot-1 {
+    top: 160px; /* Slightly moved for spacing */
+    left: 100px; /* Adjusted for alignment */
+    animation-duration: 7s; /* Duration of float animation */
+    animation-delay: 1s; /* Start delay */
+}
+
+.floating-dot-2 {
+    bottom: 100px; /* Increased spacing */
+    right: 130px; /* Adjusted for symmetry */
+    animation-duration: 9s; /* Slightly longer animation duration */
+    animation-delay: 3s; /* Animation starts after a delay */
+}
+
+/* Floating play icon styling */
+.floating-play-icon {
+    position: absolute; /* Absolute positioning */
+    font-size: 54px; /* Large icon size */
+    color: rgba(255, 255, 255, 0.2); /* Transparent color */
+    animation: float 12s infinite ease-in-out; /* Slow floating animation */
+}
+
+/* Individual floating play icons with unique position and animation */
+.floating-play-icon-1 {
+    bottom: 120px; /* Moved slightly up for better placement */
+    left: 25%; /* Adjusted for centered layout */
+    animation-duration: 12s; /* Slower animation */
+    animation-delay: 2s; /* Delay before start */
+}
+
+.floating-play-icon-2 {
+    bottom: 180px; /* Increased spacing for separation */
+    left: 65%; /* Positioned to create balance */
+    animation-duration: 14s; /* Longest animation duration */
+    animation-delay: 4s; /* Delay before animation starts */
+}
+
+/* Keyframes defining the floating effect */
+@keyframes float {
+    0% {
+        transform: translateY(0px); /* Starting position */
+    }
+    50% {
+        transform: translateY(-20px); /* Move up */
+    }
+    100% {
+        transform: translateY(0px); /* Return to start */
+    }
+}
+
+/* Breadcrumb link styling */
+.breadcrumb-item a {
+    color: #ffa500; /* Link color (orange) */
+}
+
+/* Styling for breadcrumb arrow icons */
+.custom-breadcrumb .fa-angles-right {
+    margin: 0 8px; /* Space around arrow icon */
+    color: white; /* Icon color */
+}
+
+/* Layout styling for the breadcrumb */
+.custom-breadcrumb {
+    display: flex;
+    justify-content: center; /* Center breadcrumb items */
+    align-items: start;
+    list-style: none; /* Remove default list styling */
+}
