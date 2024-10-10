@@ -399,7 +399,8 @@
     transition: all 0.3s ease;
     border: 1px solid rgba(155, 147, 147, 0.315);
     width: 13%;
-    height: 6vh;
+    /* height: 6vh; */
+    
 }
 
 .footer-section .icons i:hover {
