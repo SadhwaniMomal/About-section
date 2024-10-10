@@ -78,7 +78,7 @@ body {
   margin-right: 20px;
 }
 
-.btn-enroll {
+.btn-enroll-s{
   background-color: #1a2b7f;
   color: white;
   border-radius: 20px;
@@ -86,7 +86,7 @@ body {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.btn-enroll:hover {
+.btn-enroll-s:hover {
   background-color: #1a2b7f;
   transform: scale(1.1);
   color: white;
@@ -236,7 +236,7 @@ body {
 }
 
 /* Breadcrumb link styling */
-.breadcrumb-item a {
+.breadcrumb-item.active {
   color: #ffa500; /* Link color (orange) */
 }
 
