@@ -367,6 +367,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .about-section-container{
+    height: 180vh;
+  }
   .aboutus-img-1 {
     top: 50%;
     left: 30px;
