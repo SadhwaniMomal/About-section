@@ -257,88 +257,6 @@ body {
 /* About - Us Section Css Here */
 
 /* Styles for the first image */
-.aboutus-img-1 {
-  position: absolute;
-  top: 50%;
-  left: 0px;
-  transform: translateY(-50%);
-}
-
-.aboutus-img-1 img {
-  width: 55%;
-  height: 100%;
-}
-
-/* Styling for the enrolled students section */
-.enrolled-students {
-  position: absolute;
-  top: 15%;
-  right: 90px;
-  background-color: #fff;
-  color: #ffa500;
-  padding: 15px 10px;
-  border-radius: 2px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translateY(-50%);
-}
-
-/* Icon container styling */
-.icon-container {
-  background-color: #ffa500;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon-container img {
-  width: 30px;
-  height: auto;
-}
-
-/* Styles for the second image */
-.aboutus-img-2 {
-  position: absolute;
-  bottom: 0px;
-  right: 45px;
-}
-
-.aboutus-img-2 img {
-  width: 200px;
-  height: 300px;
-}
-
-@media (max-width: 768px) {
-  .aboutus-img-2 {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-  }
-  .enrolled-students {
-    position: absolute;
-    top: 15%;
-    right: 50px;
-    background-color: #fff;
-    color: #ffa500;
-    padding: 15px 10px;
-    border-radius: 2px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translateY(-50%);
-  }
-  .about-us-container {
-    height: 185vh;
-  }
-}
-
-/* Left-side content styling */
 .highlight-text {
   color: #ff9900;
   font-weight: bold;
@@ -382,6 +300,89 @@ body {
   align-items: center;
   gap: 15px;
   margin-top: 20px;
+}
+.about-section-container {
+  height: 85vh;
+}
+
+.about-section-row {
+  height: 85vh;
+}
+
+/* Styles for the first image */
+.aboutus-img-1 {
+  position: absolute;
+  top: 52%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+.aboutus-img-1 img {
+  width: 55%;
+  height: auto;
+}
+
+/* Styling for the enrolled students section */
+.enrolled-students {
+  position: absolute;
+  top: 19%;
+  right: 90px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #ffa500;
+  padding: 15px 10px;
+  border-radius: 2px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50%);
+}
+
+/* Icon container styling */
+.icon-container {
+  background-color: #ffa500;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container img {
+  width: 30px;
+  height: auto;
+}
+
+/* Styles for the second image */
+.aboutus-img-2 {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+}
+
+.aboutus-img-2 img {
+  width: 200px;
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  .aboutus-img-1 {
+    top: 50%;
+    left: 30px;
+    right: 0;
+    width: 100%;
+    height: auto;
+  }
+  .aboutus-img-1 img {
+    width: 67%;
+    height: auto;
+  }
+  .enrolled-students {
+    top: 15%;
+    right: 0px;
+    color: #ffa500;
+  }
 }
 
 /* Counter Section Here */
@@ -514,7 +515,7 @@ body {
   top: 10px;
   right: 100px;
   box-shadow: rgba(108, 99, 255, 1) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px,rgba(108, 99, 255, 1) 0px 4px 6px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(108, 99, 255, 1) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -542,7 +543,9 @@ body {
   color: #f39c12;
   border-radius: 50%;
   margin: 0 auto;
-  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 /* Adjustments for smaller screen sizes */
 /* Adjustments for smaller screen sizes */
@@ -560,44 +563,43 @@ body {
   }
 }
 
-
 /* Review Section here */
 .testimonial-quote {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .testimonial-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .quote-icon {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    background-color: #f7b400;
-    color: #fff;
-    border-radius: 2px;
-  }
-  .testimonial-text {
-    font-size: 16px;
-    margin-top: 10px;
-    color: #333;
-  }
-  .testimonial-author {
-    font-weight: bold;
-  }
-  .testimonial-role {
-    color: #888;
-  }
-  .rating {
-    color: #f7b400;
-  }
-  .testimonial-img img {
-    width: 100px;
-    height: 100%;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.testimonial-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quote-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  background-color: #f7b400;
+  color: #fff;
+  border-radius: 2px;
+}
+.testimonial-text {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #333;
+}
+.testimonial-author {
+  font-weight: bold;
+}
+.testimonial-role {
+  color: #888;
+}
+.rating {
+  color: #f7b400;
+}
+.testimonial-img img {
+  width: 100px;
+  height: 100%;
+}
