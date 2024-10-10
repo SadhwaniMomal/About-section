@@ -690,3 +690,126 @@ body {
   width: 100px;
   height: 100%;
 }
+
+
+/* <!-- General Questions --> */
+
+/* Accordion item styling */
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px; /* Add space below each accordion item */
+  border-radius: 8px; /* Ensures each item has rounded corners */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  border: none !important;
+
+}
+
+/* Accordion header styling */
+.accordion-header {
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+  margin: 10px;
+  user-select: none;
+}
+
+/* Icon styling inside the accordion header */
+.accordion-header .icon {
+  background-color: #ffa500;
+  margin-right: 10px;
+  font-size: 1.5rem;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.accordion-header.active .icon {
+  background-color: #2d3a95;
+}
+
+/* Accordion body styling */
+.accordion-body {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease; /* Smooth transition for height */
+  padding: 0 15px;
+  border-radius: 0 0 8px 8px;
+}
+
+/* Accordion body content styling */
+.accordion-body-content {
+  padding: 15px;
+  color: #333;
+}
+
+
+/* <!-- Newsletters Subcribe --> */
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100px 100px;
+  }
+}
+
+.subscribe {
+  background-color: #6c63ff;
+  padding: 50px 0; /* Adds some padding to the section */
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.4) 1px,
+    transparent 1px
+  );
+  background-size: 20px 20px; /* Adjust the size of the dot pattern */
+  animation: moveBackground 10s linear infinite; /* Adds animation to the background */
+}
+
+.subscribe-text {
+  background-color: #fff;
+  color: #6c63ff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto; /* Centers the text block */
+}
+
+.subscribe-form {
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.subscribe-form .form-control {
+  border-radius: 50px;
+  padding: 10px 20px;
+  border: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe-form .btn-custom {
+  background-color: #ff9d3b; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.subscribe-form .btn-custom:hover {
+  background-color: #ff7f0f; /* Darker shade on hover */
+}
